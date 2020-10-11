@@ -1,6 +1,7 @@
 import serial.tools.list_ports
 
-a = serial.tools.list_ports.comports()
+ports = serial.tools.list_ports.comports()
 
-print(a)
-
+for p in ports:
+    print(p.device, p.description)
+print(len(ports), 'ports found')
