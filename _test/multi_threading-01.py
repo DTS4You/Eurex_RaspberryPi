@@ -10,7 +10,7 @@ def sleeper(i):
 
 def main():
 
-    for i in range(10):
+    for i in range(1, 10):
         t = Thread(target=sleeper, args=(i,))
         t.start()
 
